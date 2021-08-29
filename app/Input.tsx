@@ -2,13 +2,26 @@ import React from 'react';
 import {StyleSheet, Text, TextInput, Dimensions} from 'react-native';
 
 interface Props {
+  placeholder?: string;
+  value?: string;
+  onChangeText?: (text: string) => void;
   error?: string;
 }
 
-export default function Input({error}: Props) {
+export default function Input({
+  placeholder,
+  value,
+  onChangeText,
+  error,
+}: Props) {
   return (
     <>
-      <TextInput style={styles.input} />
+      <TextInput
+        style={styles.input}
+        placeholder={placeholder}
+        value={value}
+        onChangeText={onChangeText}
+      />
       {error && <Text>{error}</Text>}
     </>
   );
