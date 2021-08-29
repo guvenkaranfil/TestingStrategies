@@ -2,14 +2,13 @@ import React from 'react';
 import {StyleSheet, Text, TextInput, Dimensions} from 'react-native';
 
 interface Props {
-  placeholder: string;
   error?: string;
 }
 
-export default function Input({placeholder, error}: Props) {
+export default function Input({error}: Props) {
   return (
     <>
-      <TextInput style={styles.input} placeholder={placeholder} />
+      <TextInput style={styles.input} />
       {error && <Text>{error}</Text>}
     </>
   );
