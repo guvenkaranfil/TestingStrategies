@@ -5,7 +5,8 @@
   "apps": {
     "ios": {
       "type": "ios.app",
-      "binaryPath": "/Users/guvenkaranfil/Library/Developer/Xcode/DerivedData/TestStrategies-enidtkkqgeawjqdntdejfskorzgg/Build/Products/Debug-iphonesimulator/TestStrategies.app"
+
+      "binaryPath": "ios/Build/TestStrategies/Build/Products/Debug-iphonesimulator/TestStrategies.app"
     },
     "android": {
       "type": "android.apk",
