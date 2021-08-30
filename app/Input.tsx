@@ -2,6 +2,7 @@ import React from 'react';
 import {StyleSheet, Text, TextInput, Dimensions} from 'react-native';
 
 interface Props {
+  testId?: string;
   placeholder?: string;
   value?: string;
   onChangeText?: (text: string) => void;
@@ -9,6 +10,7 @@ interface Props {
 }
 
 export default function Input({
+  testId,
   placeholder,
   value,
   onChangeText,
@@ -17,6 +19,7 @@ export default function Input({
   return (
     <>
       <TextInput
+        testID={testId}
         style={styles.input}
         placeholder={placeholder}
         value={value}

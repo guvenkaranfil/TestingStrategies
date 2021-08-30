@@ -30,8 +30,18 @@ export default function SignInForm() {
 
   return (
     <>
-      <Input placeholder="E-Mail" value={email} onChangeText={setemail} />
-      <Input placeholder="Şifre" value={password} onChangeText={setpassword} />
+      <Input
+        testId={'email-input'}
+        placeholder="E-Mail"
+        value={email}
+        onChangeText={setemail}
+      />
+      <Input
+        testId="password-input"
+        placeholder="Şifre"
+        value={password}
+        onChangeText={setpassword}
+      />
       <TouchableOpacity onPress={handleLogin}>
         <Text>Giriş Yap</Text>
       </TouchableOpacity>
