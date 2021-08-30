@@ -10,6 +10,8 @@ import {
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
+import SignInForm from './app/SignInForm';
+
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
@@ -27,6 +29,7 @@ const App = () => {
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <View style={styles.container}>
         <Text style={[styles.title, textColor]}>Welcome!</Text>
+        <SignInForm />
       </View>
     </SafeAreaView>
   );
